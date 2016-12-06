@@ -30,7 +30,7 @@ class ViewController: UIViewController {
                 
             }
             
-            let data = text_field.text?.data(using: String.Encoding.isoLatin1, allowLossyConversion: false)
+            let data = text_field.text?.data(using: String.Encoding.utf8, allowLossyConversion: false)
             
             let filter = CIFilter(name: "CIQRCodeGenerator")
             
